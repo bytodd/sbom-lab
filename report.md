@@ -1,7 +1,7 @@
 # 🔍 SBOM Vulnerability Scan Report: Flask Project
 
 **Date:** July 2, 2025  
-**Toolchain:** Syft + Grype  
+**Toolchain:** Syft + Grype + jq
 **Target:** [pallets/flask](https://github.com/pallets/flask)
 
 ---
