@@ -1,2 +1,2 @@
-# sbom-lab
-Generate and analyze SBOMs using Syft and Grype to explore software supply chain security.
+# sbom-analysis-demo
+Generated and analyzed a software bill of materials (SBOM) for Flask using Syft and Grype.
