@@ -1,4 +1,4 @@
-# sbom-analysis-demo
+# SBOM generation and vulnerability scanning
 Generated and analyzed a Software Bill of Materials (SBOM) for Flask using Syft and Grype.
 
 ---
