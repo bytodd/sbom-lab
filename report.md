@@ -47,3 +47,17 @@
 - Automate this scanning process in CI pipelines for future builds.
 
 ---
+
+## 📚 Reflections
+
+Got to work with open source tools like Syft and Grype for the first time, and learned through doing how each one works — what they output, and how they fit together in a software supply chain workflow.
+
+I looked up my first CVE (vulnerability ID) to understand what kind of attack surface the software I scanned might expose. That alone helped me realize how real and actionable SBOMs can be.
+
+One thing I noticed: vulnerability findings sometimes overlap — multiple entries may be resolved with the same update. But whether to consolidate them depends on your audience. I decided to include all 9 findings in my report, just to show the full picture.
+
+I also discovered `jq` by asking ChatGPT how to better view the SBOM JSON output. Once I installed it, I used it to comb through each component and its metadata, which made the results much easier to explore.
+
+When I saw that all the license fields were coming back as `null`, I used `jq` again to double-check — and confirmed it. After some trial and error, I figured out the issue: Syft wasn't scanning the installed packages. Once I pointed Syft to the actual `site-packages` folder on my system, the license data started showing up. That small change made a big difference in the quality of the SBOM.
+
+---
